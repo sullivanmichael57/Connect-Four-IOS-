@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Connect_Four" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3beeb3e837f6bac3d892bf44992af030" translatesAutoresizingMaskIntoConstraints="NO" id="Rc6-cY-Z28">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjH-EH-NBO">
+                                <rect key="frame" x="114" y="170" width="147" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="StartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69A-5f-Xee"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65C-rU-Mbs">
+                                <rect key="frame" x="39" y="20" width="297" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="tb1-ED-Jhf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.98729679972186202" green="0.99176639855212634" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="ONq-3i-Rdp">
+                                <rect key="frame" x="39" y="395" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="had-Hg-ZZV">
+                                <rect key="frame" x="84" y="395" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="dS0-vQ-VoU">
+                                <rect key="frame" x="129" y="395" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="lOK-51-cRe">
+                                <rect key="frame" x="174" y="395" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="6WC-Yc-c7g">
+                                <rect key="frame" x="219" y="395" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="Xom-z1-P8g">
+                                <rect key="frame" x="309" y="395" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="Ljq-sR-ynB">
+                                <rect key="frame" x="264" y="395" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="4gD-YG-4e9">
+                                <rect key="frame" x="40" y="430" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="KSc-5U-3Ix">
+                                <rect key="frame" x="85" y="430" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="gom-5Y-d63">
+                                <rect key="frame" x="130" y="430" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="Rwq-00-BSe">
+                                <rect key="frame" x="175" y="430" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="Gwn-cB-rPi">
+                                <rect key="frame" x="220" y="430" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-rJ-pMm">
+                                <rect key="frame" x="310" y="430" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="MRy-aW-Tob">
+                                <rect key="frame" x="265" y="430" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="83r-B8-r61">
+                                <rect key="frame" x="40" y="465" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="4Gg-sB-laa">
+                                <rect key="frame" x="85" y="465" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="pgv-lu-2Em">
+                                <rect key="frame" x="130" y="465" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="Fbg-Kv-0TW">
+                                <rect key="frame" x="175" y="465" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="64N-He-t6Z">
+                                <rect key="frame" x="220" y="465" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="utK-ZJ-O8s">
+                                <rect key="frame" x="310" y="465" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="56z-dd-8ZF">
+                                <rect key="frame" x="265" y="465" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="tkD-jk-p4X">
+                                <rect key="frame" x="40" y="500" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-Ke-yCN">
+                                <rect key="frame" x="85" y="500" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-7U-ylE">
+                                <rect key="frame" x="130" y="500" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="CGe-yO-pdE">
+                                <rect key="frame" x="175" y="500" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-TJ-j2d">
+                                <rect key="frame" x="220" y="500" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="KjW-ot-jXz">
+                                <rect key="frame" x="310" y="500" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="mRP-Hh-3Un">
+                                <rect key="frame" x="265" y="500" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="OJ3-Tf-Ylw">
+                                <rect key="frame" x="39" y="360" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-i1-acP">
+                                <rect key="frame" x="84" y="360" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="AWc-6O-sXV">
+                                <rect key="frame" x="129" y="360" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="aBU-2c-caX">
+                                <rect key="frame" x="174" y="360" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="Xgb-Jb-rCh">
+                                <rect key="frame" x="219" y="360" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="aj8-lw-WyA">
+                                <rect key="frame" x="264" y="360" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="lml-CS-USa">
+                                <rect key="frame" x="309" y="360" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="UJR-wg-1j3">
+                                <rect key="frame" x="40" y="535" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="dr4-dh-8eB">
+                                <rect key="frame" x="85" y="535" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="3qo-88-44w">
+                                <rect key="frame" x="130" y="535" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-2A-o24">
+                                <rect key="frame" x="175" y="535" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="KDh-9c-OII">
+                                <rect key="frame" x="220" y="535" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="Cvo-gw-AiW">
+                                <rect key="frame" x="310" y="535" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red circle" translatesAutoresizingMaskIntoConstraints="NO" id="ZLv-tO-EIc">
+                                <rect key="frame" x="265" y="535" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="65C-rU-Mbs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2QL-cD-HQR"/>
+                            <constraint firstItem="Rc6-cY-Z28" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="3w6-0K-U6B"/>
+                            <constraint firstItem="SjH-EH-NBO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7PJ-SX-rLa"/>
+                            <constraint firstItem="65C-rU-Mbs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cii-MM-xoz"/>
+                            <constraint firstItem="Rc6-cY-Z28" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gis-kB-kb4"/>
+                            <constraint firstItem="Rc6-cY-Z28" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="Jc0-wK-7ub"/>
+                            <constraint firstItem="65C-rU-Mbs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="Py6-F2-etk"/>
+                            <constraint firstItem="Rc6-cY-Z28" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WYZ-4o-6UQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SjH-EH-NBO" secondAttribute="bottom" constant="449" id="eee-Ct-V3V"/>
+                            <constraint firstItem="SjH-EH-NBO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="hPN-X2-aTP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rc6-cY-Z28" secondAttribute="trailing" id="nM9-C1-JWW"/>
+                            <constraint firstItem="Rc6-cY-Z28" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wec-5d-a8q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Backg" destination="Rc6-cY-Z28" id="cZe-Vz-LoG"/>
+                        <outlet property="PlayerLabel" destination="65C-rU-Mbs" id="N7i-bB-Cxq"/>
+                        <outlet property="Red1" destination="OJ3-Tf-Ylw" id="mn0-8N-ZjU"/>
+                        <outlet property="Red10" destination="dS0-vQ-VoU" id="78D-bM-n3o"/>
+                        <outlet property="Red11" destination="lOK-51-cRe" id="2HT-zd-X9P"/>
+                        <outlet property="Red12" destination="6WC-Yc-c7g" id="qWD-Yp-VEa"/>
+                        <outlet property="Red13" destination="Ljq-sR-ynB" id="zhc-UA-B6k"/>
+                        <outlet property="Red14" destination="Xom-z1-P8g" id="WaC-ZO-I0l"/>
+                        <outlet property="Red15" destination="4gD-YG-4e9" id="m5S-1l-VuF"/>
+                        <outlet property="Red16" destination="KSc-5U-3Ix" id="gT7-s9-bb1"/>
+                        <outlet property="Red17" destination="gom-5Y-d63" id="iuS-f8-tLv"/>
+                        <outlet property="Red18" destination="Rwq-00-BSe" id="ctx-CY-AhD"/>
+                        <outlet property="Red19" destination="Gwn-cB-rPi" id="LfM-9q-Haa"/>
+                        <outlet property="Red2" destination="YyV-i1-acP" id="4g6-HD-93p"/>
+                        <outlet property="Red20" destination="MRy-aW-Tob" id="Z1c-D1-Puh"/>
+                        <outlet property="Red21" destination="mtb-rJ-pMm" id="Ybl-Mo-F9s"/>
+                        <outlet property="Red22" destination="83r-B8-r61" id="UHd-vn-ref"/>
+                        <outlet property="Red23" destination="4Gg-sB-laa" id="cH1-jE-B4n"/>
+                        <outlet property="Red24" destination="pgv-lu-2Em" id="Pdf-pC-oTt"/>
+                        <outlet property="Red25" destination="Fbg-Kv-0TW" id="2sW-6r-7iD"/>
+                        <outlet property="Red26" destination="64N-He-t6Z" id="eIP-3e-ULA"/>
+                        <outlet property="Red27" destination="56z-dd-8ZF" id="E4m-1b-Rfx"/>
+                        <outlet property="Red28" destination="utK-ZJ-O8s" id="edA-gs-Bzj"/>
+                        <outlet property="Red29" destination="tkD-jk-p4X" id="jDY-QF-lA6"/>
+                        <outlet property="Red3" destination="AWc-6O-sXV" id="eFB-Vf-F3l"/>
+                        <outlet property="Red30" destination="mzM-Ke-yCN" id="a7q-40-T1I"/>
+                        <outlet property="Red31" destination="uG5-7U-ylE" id="6Nd-jn-jv5"/>
+                        <outlet property="Red32" destination="CGe-yO-pdE" id="KFk-Xh-zGN"/>
+                        <outlet property="Red33" destination="F8h-TJ-j2d" id="ICZ-GI-dhI"/>
+                        <outlet property="Red34" destination="mRP-Hh-3Un" id="WbB-a8-xQH"/>
+                        <outlet property="Red35" destination="KjW-ot-jXz" id="5yq-n6-eye"/>
+                        <outlet property="Red36" destination="UJR-wg-1j3" id="Wfz-ee-M47"/>
+                        <outlet property="Red37" destination="dr4-dh-8eB" id="EXx-z3-zPm"/>
+                        <outlet property="Red38" destination="3qo-88-44w" id="V7s-RO-5eS"/>
+                        <outlet property="Red39" destination="gVd-2A-o24" id="2Jt-R1-GNg"/>
+                        <outlet property="Red4" destination="aBU-2c-caX" id="nUq-gx-6aC"/>
+                        <outlet property="Red40" destination="KDh-9c-OII" id="BMI-D1-URQ"/>
+                        <outlet property="Red41" destination="ZLv-tO-EIc" id="rOz-v5-aw7"/>
+                        <outlet property="Red42" destination="Cvo-gw-AiW" id="RUZ-qg-n9Y"/>
+                        <outlet property="Red5" destination="Xgb-Jb-rCh" id="Tt7-nM-xWX"/>
+                        <outlet property="Red6" destination="aj8-lw-WyA" id="PFe-fZ-YQ8"/>
+                        <outlet property="Red7" destination="lml-CS-USa" id="5F5-U4-ZTG"/>
+                        <outlet property="Red8" destination="ONq-3i-Rdp" id="Bo4-WR-eLf"/>
+                        <outlet property="Red9" destination="had-Hg-ZZV" id="Lic-Yp-zSq"/>
+                        <outlet property="StartButton" destination="SjH-EH-NBO" id="o8y-Fj-UUE"/>
+                        <outletCollection property="RedCollection" destination="OJ3-Tf-Ylw" collectionClass="NSMutableArray" id="UaO-IX-n3S"/>
+                        <outletCollection property="RedCollection" destination="YyV-i1-acP" collectionClass="NSMutableArray" id="H3s-k2-ZpC"/>
+                        <outletCollection property="RedCollection" destination="AWc-6O-sXV" collectionClass="NSMutableArray" id="pkh-aU-uXV"/>
+                        <outletCollection property="RedCollection" destination="aBU-2c-caX" collectionClass="NSMutableArray" id="2R5-Nl-Ln6"/>
+                        <outletCollection property="RedCollection" destination="Xgb-Jb-rCh" collectionClass="NSMutableArray" id="ehU-9C-eZ4"/>
+                        <outletCollection property="RedCollection" destination="aj8-lw-WyA" collectionClass="NSMutableArray" id="qk3-sz-Iyg"/>
+                        <outletCollection property="RedCollection" destination="lml-CS-USa" collectionClass="NSMutableArray" id="QJw-sc-7pk"/>
+                        <outletCollection property="RedCollection" destination="utK-ZJ-O8s" collectionClass="NSMutableArray" id="fCe-2M-0xb"/>
+                        <outletCollection property="RedCollection" destination="Cvo-gw-AiW" collectionClass="NSMutableArray" id="ROg-n8-aCV"/>
+                        <outletCollection property="RedCollection" destination="ONq-3i-Rdp" collectionClass="NSMutableArray" id="p0g-es-Y9X"/>
+                        <outletCollection property="RedCollection" destination="had-Hg-ZZV" collectionClass="NSMutableArray" id="m2j-b6-Mb2"/>
+                        <outletCollection property="RedCollection" destination="dS0-vQ-VoU" collectionClass="NSMutableArray" id="ohy-xx-rHR"/>
+                        <outletCollection property="RedCollection" destination="lOK-51-cRe" collectionClass="NSMutableArray" id="QwH-6t-qE1"/>
+                        <outletCollection property="RedCollection" destination="6WC-Yc-c7g" collectionClass="NSMutableArray" id="7en-fZ-Shd"/>
+                        <outletCollection property="RedCollection" destination="Ljq-sR-ynB" collectionClass="NSMutableArray" id="tUI-Rf-SEz"/>
+                        <outletCollection property="RedCollection" destination="Xom-z1-P8g" collectionClass="NSMutableArray" id="EX3-AT-ORa"/>
+                        <outletCollection property="RedCollection" destination="mtb-rJ-pMm" collectionClass="NSMutableArray" id="Q05-qz-YoF"/>
+                        <outletCollection property="RedCollection" destination="MRy-aW-Tob" collectionClass="NSMutableArray" id="Jnu-aA-o1x"/>
+                        <outletCollection property="RedCollection" destination="Gwn-cB-rPi" collectionClass="NSMutableArray" id="k06-BV-4N4"/>
+                        <outletCollection property="RedCollection" destination="Rwq-00-BSe" collectionClass="NSMutableArray" id="chm-Sj-b7C"/>
+                        <outletCollection property="RedCollection" destination="gom-5Y-d63" collectionClass="NSMutableArray" id="UH7-ya-yTH"/>
+                        <outletCollection property="RedCollection" destination="KSc-5U-3Ix" collectionClass="NSMutableArray" id="3qi-e9-fbf"/>
+                        <outletCollection property="RedCollection" destination="4gD-YG-4e9" collectionClass="NSMutableArray" id="YLd-TV-qxm"/>
+                        <outletCollection property="RedCollection" destination="83r-B8-r61" collectionClass="NSMutableArray" id="6Ii-KE-dOf"/>
+                        <outletCollection property="RedCollection" destination="4Gg-sB-laa" collectionClass="NSMutableArray" id="dTR-2B-siY"/>
+                        <outletCollection property="RedCollection" destination="pgv-lu-2Em" collectionClass="NSMutableArray" id="5bA-SD-bnh"/>
+                        <outletCollection property="RedCollection" destination="Fbg-Kv-0TW" collectionClass="NSMutableArray" id="z4H-5c-R8S"/>
+                        <outletCollection property="RedCollection" destination="64N-He-t6Z" collectionClass="NSMutableArray" id="REb-9L-Gb6"/>
+                        <outletCollection property="RedCollection" destination="56z-dd-8ZF" collectionClass="NSMutableArray" id="pA6-YH-Kx6"/>
+                        <outletCollection property="RedCollection" destination="KjW-ot-jXz" collectionClass="NSMutableArray" id="2uB-an-8XX"/>
+                        <outletCollection property="RedCollection" destination="mRP-Hh-3Un" collectionClass="NSMutableArray" id="O8g-FB-hy5"/>
+                        <outletCollection property="RedCollection" destination="F8h-TJ-j2d" collectionClass="NSMutableArray" id="gSG-Fr-TYg"/>
+                        <outletCollection property="RedCollection" destination="CGe-yO-pdE" collectionClass="NSMutableArray" id="Z99-OB-HQ8"/>
+                        <outletCollection property="RedCollection" destination="uG5-7U-ylE" collectionClass="NSMutableArray" id="ygb-iJ-AOq"/>
+                        <outletCollection property="RedCollection" destination="mzM-Ke-yCN" collectionClass="NSMutableArray" id="ag0-v0-azv"/>
+                        <outletCollection property="RedCollection" destination="tkD-jk-p4X" collectionClass="NSMutableArray" id="8vm-q2-rMC"/>
+                        <outletCollection property="RedCollection" destination="UJR-wg-1j3" collectionClass="NSMutableArray" id="t2s-4F-VZL"/>
+                        <outletCollection property="RedCollection" destination="dr4-dh-8eB" collectionClass="NSMutableArray" id="Jzp-vO-2CJ"/>
+                        <outletCollection property="RedCollection" destination="3qo-88-44w" collectionClass="NSMutableArray" id="wMI-cO-DjW"/>
+                        <outletCollection property="RedCollection" destination="gVd-2A-o24" collectionClass="NSMutableArray" id="FN6-Ym-eVN"/>
+                        <outletCollection property="RedCollection" destination="KDh-9c-OII" collectionClass="NSMutableArray" id="vM6-Dk-uiq"/>
+                        <outletCollection property="RedCollection" destination="ZLv-tO-EIc" collectionClass="NSMutableArray" id="hkm-Kn-6hB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="31.03448275862069"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3beeb3e837f6bac3d892bf44992af030" width="744" height="1392"/>
+        <image name="red circle" width="2000" height="2000"/>
+    </resources>
+</document>
